@@ -3,13 +3,10 @@ import os
 import shutil
 import sys
 
-#copy from "C:/Users/datga/Desktop/fake dir" to "C:/Users/datga/Desktop/copied"
-#songsDirectory = os.path.join(os.getenv('LOCALAPPDATA'), "osu!/Songs")
-#backupDirectory = os.path.join(os.getenv('LOCALAPPDATA'), "osu!/osuBackup")
-songsDirectory = "C:/Users/datga/Desktop/fakeSongs"
-backupDirectory = "C:/Users/datga/Desktop/copy moment"
+songsDirectory = os.path.join(os.getenv('LOCALAPPDATA'), "osu!/Songs")
+backupDirectory = os.path.join(os.getenv('LOCALAPPDATA'), "osu!/osuBackup")
 
-#initialize folder
+#initialize
 try:
     os.mkdir(backupDirectory)
 except:
